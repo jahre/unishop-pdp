@@ -1,0 +1,16 @@
+/*Products*/
+/*.prodtype-wrapper{
+    width: 25%;
+    box-sizing: border-box;
+}*/
+
+
+/*Slider*/
+.prodslide-wrapper{
+    width: 25%;
+    box-sizing: border-box;
+}
+
+.prodslide-wrapper:first-child{
+    padding: 0 10px;
+}
