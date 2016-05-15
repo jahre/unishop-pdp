@@ -1,0 +1,148 @@
+/* Potentially reusable buttons, links and inputs */
+/*______________________________________________________________*/
+.intro-link {
+  background: $white;
+  border: 3px solid $marine-blue;
+  color: #157c99;
+  display: inline-block;
+  font-family: 'Oswald-Regular', sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  padding: 12px 18px 10px;
+  text-decoration: none;
+}
+.intro-link:hover {
+  background: $marine-blue;
+  color: $white;
+}
+.search-input {
+  background: url('../img/search.png') no-repeat 220px 50%;
+  border: 1px solid #d2d0d0;
+  box-sizing: border-box;
+  height: 34px;
+  line-height: 32px;
+  padding: 0;
+  padding: 0 12px;
+  position: relative;
+  top: -1px;
+  width: 247px;
+}
+.search-input:focus {
+  border-color: #948f8f;
+  outline: none;
+}
+.locator-input {
+  border: 1px solid #cdcdcd;
+  box-shadow: inset 0 2px 0 0 #f2f2f2;
+  color: #b8b8b8;
+  font-family: 'Oswald-Light', sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  height: 54px;
+  line-height: 54px;
+  margin-top: 62px;
+  max-width: 640px;
+  text-align: center;
+  width: 100%;
+}
+.locator-find {
+  background: $marine-blue;
+  border: none;
+  color: $white;
+  font-family: 'Oswald-Regular', sans-serif;
+  font-size: 30px;
+  line-height: 68px;
+  padding: 0 55px;
+}
+.locator-find:hover {
+  background: #006380;
+}
+.locator-select{
+  background: none;
+  border: none;
+  color: #474747;
+}
+.newslatter-input {
+  background: $gray05;
+  border: 1px solid #e3e3e3;
+  box-shadow: inset 0 2px 0 0 #eee;
+  box-sizing: border-box;
+  color: #ccc;
+  font-family: 'Oswald-Light', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  height: 34px;
+  line-height: 34px;
+  padding-left: 10px;
+  width: 100%;
+}
+.newslatter-input:focus {
+  background: $white;
+  border: 1px solid #948f8f;
+  color: $gray70;
+  outline: none;
+}
+.newslatter-select {
+  border: 1px solid $gray20;
+  box-sizing: border-box;
+  color: $gray70;
+  display: block;
+  font-family: 'Oswald-Light', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  height: 34px;
+  line-height: 34px;
+  margin: 15px 0;
+  max-width: 140px;
+  padding-left: 7px;
+  width: 100%;
+}
+.newslatter-subscribe {
+  background: $marine-blue;
+  border: none;
+  color: $white;
+  font-family: 'Oswald-Regular', sans-serif;
+  font-size: 16px;
+  line-height: 36px;
+  max-width: 140px;
+  text-align: center;
+  width: 100%;
+}
+.newslatter-subscribe:hover {
+  background: #006380;
+}
+
+/* Media Queries for UI components */
+/*______________________________________________________________*/
+@media (max-width: 900px) {
+  .search-input {
+    background: url('../img/search.png') no-repeat 50% 50%;
+    width: 40px;
+  }
+  .search-input:-moz-placeholder {
+    color: transparent;
+  }
+  .search-input:-ms-input-placeholder {
+    color: transparent;
+  }
+  .search-input::-moz-placeholder {
+    color: transparent;
+  }
+  .search-input::-webkit-input-placeholder {
+    color: transparent;
+  }
+  .search-input:focus {
+    background: url('../img/search.png') no-repeat 74px 50%;
+    width: 100px;
+  }
+}
+@media (max-width: 600px) {
+  .search-input {
+    width: auto;
+  }
+  .newslatter-select,
+  .newslatter-subscribe {
+    max-width: 100%;
+  }
+  
+}

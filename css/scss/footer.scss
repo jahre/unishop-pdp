@@ -1,0 +1,123 @@
+/* Footer */
+/*______________________________________________________________*/
+footer {
+  background: #fdfdfd;
+  border: 1px solid $gray20;
+  box-sizing: border-box;
+  min-height: 356px;
+  padding-top: 50px;
+}
+footer .container {
+  overflow: hidden;
+}
+.footer-col-wrapper {
+  box-sizing: border-box;
+  float: left;
+  overflow: hidden;
+  padding: 0 10px;
+  text-align: center;
+  width: 25%;
+}
+.footer-column {
+  display: inline-block;
+  max-width: 220px;
+  min-height: 170px;
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
+.column-title {
+  min-height: 55px;
+}
+.column-title h3 {
+  color: #434343;
+  font-family: 'Oswald-Regular', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+  text-transform: uppercase;
+}
+.column-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.column-list ul {
+  margin-top: 28px;
+}
+.column-list li {
+  margin-bottom: 15px;
+}
+.column-list.column-blogs li {
+  margin-bottom: 25px;
+}
+.col-element-title,
+.col-element-title h4 {
+  color: $gray70;
+  font-family: 'Oswald-Light', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+  text-decoration: none;
+}
+.col-element-title p {
+  color: #898989;
+  font-size: 16px;
+}
+a.col-element-title:hover {
+  text-decoration: underline;
+}
+.footer-logo {
+  height: auto;
+  max-width: 180px;
+  width: 100%;
+}
+.footer-logo-caption {
+  color: $gray45;
+  font-family: 'Aleo', sans-serif;
+  font-size: 15px;
+}
+.footer-socials {
+  background: red;
+  background: url('../img/icon-sprite.png') no-repeat;
+  display: inline-block;
+  height: 34px;
+  margin-bottom: 8px;
+  margin-right: 9px;
+  width: 34px;
+}
+.footer-socials:hover {
+  opacity: .6;
+}
+.footer-socials.instagram {
+  background-position: 0 0;
+}
+.footer-socials.twitter {
+  background-position: -34px 0;
+}
+.footer-socials.youtube {
+  background-position: -68px 0;
+}
+.footer-socials.vimeo {
+  background-position: -102px 0;
+}
+.footer-socials.cloud {
+  background-position: -136px 0;
+}
+.footer-socials.google-plus {
+  background-position: -170px 0;
+}
+.footer-socials.blogspot {
+  background-position: -204px 0;
+}
+
+/* Media Queries for footer */
+/*______________________________________________________________*/
+@media (max-width: 600px) {
+  .footer-col-wrapper {
+    width: 100%;
+  }
+  .footer-column {
+    max-width: 100%;
+  }
+}

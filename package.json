@@ -1,0 +1,28 @@
+{
+  "name": "unisop",
+  "version": "1.0.0",
+  "description": "pdp project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jahre/unishop-pdp.git"
+  },
+  "keywords": [
+    "unishop",
+    "pdp"
+  ],
+  "author": "Ivan Amelyanenka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jahre/unishop-pdp/issues"
+  },
+  "homepage": "https://github.com/jahre/unishop-pdp#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.1",
+    "gulp.spritesmith": "^6.2.1"
+  }
+}

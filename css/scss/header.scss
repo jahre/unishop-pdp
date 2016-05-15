@@ -1,0 +1,330 @@
+/* Top of header */
+/*______________________________________________________________*/
+.header-top {
+  background: $gray10;
+  border: 1px solid $gray20;
+  box-sizing: border-box;
+  height: 30px;
+}
+.tabs {
+  float: left;
+}
+.tab {
+  background: $gray10;
+  border-bottom: 1px solid $gray20;
+  border-right: 1px solid $gray20;
+  box-sizing: border-box;
+  cursor: pointer;
+  float: left;
+  height: 29px;
+  padding: 0 13px;
+}
+.tab:first-child {
+  border-left: 1px solid $gray20;
+}
+.tab:not(.is-active):hover {
+  background: #eeeeee;
+  color: gray;
+}
+.tab.is-active {
+  background: $white;
+  border-bottom: 1px solid $white;
+}
+.tab.unishop {
+  color: $gray70;
+  font-family: 'Aleo', sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.tab.twister {
+  color: $gray45;
+  font-family: 'Oswald-Regular', sans-serif;
+  font-size: 15px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.tab.rockstar {
+  color: $gray45;
+  font-family: 'Nexa', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 29px;
+  text-align: center;
+}
+.super-stuff {
+  background: #f52c66;
+  color: $white;
+  display: block;
+  float: right;
+  font-family: 'Aleo', sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  top: -1px;
+  width: 220px;
+}
+.super-stuff:before {
+  background: url('../img/super-staff-star.png');
+  content: '';
+  cursor: pointer;
+  height: 12px;
+  left: 103px;
+  position: absolute;
+  top: 30px;
+  width: 13px;
+  z-index: 3;
+}
+.super-stuff:after {
+  border-left: 110px solid transparent;
+  border-right: 110px solid transparent;
+  border-top: 22px solid #f52c66;
+  content: '';
+  cursor: pointer;
+  height: 0;
+  left: 0;
+  position: absolute;
+  top: 30px;
+  width: 0;
+  z-index: 2;
+}
+/* Central part of header */
+/*______________________________________________________________*/
+.header-main {
+  height: 100px;
+}
+.header-main .hm-wrapper {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+.unishop {
+  background: url('../img/unishop-logo-desktop.png') no-repeat 50% 50%;
+}
+.logo {
+  height: 100%;
+  text-align: center;
+}
+.logo:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  margin-right: -0.25em;
+  vertical-align: middle;
+}
+.logo img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.my-info {
+  bottom: 34px;
+  color: $gray45;
+  font-family: 'Oswald-Light', sans-serif;
+  font-size: 16px;
+  position: absolute;
+  right: 0;
+}
+.my-info a {
+  color: $gray45;
+  text-decoration: none;
+}
+.my-info a:hover {
+  text-decoration: underline;
+}
+.my-cart {
+  font-size: 24px;
+}
+.item-number {
+  color: #333;
+}
+.item-number i {
+  font-style: normal;
+}
+.currency {
+  bottom: 34px;
+  color: $gray45;
+  font-family: 'Oswald-Light', sans-serif;
+  left: 0;
+  position: absolute;
+}
+.currency select {
+  border: none;
+  color: $gray70;
+}
+.currency em {
+  font-style: normal;
+}
+/* Navigation and Main Menu */
+/*______________________________________________________________*/
+.header-nav {
+  border-bottom: 1px solid #d2d0d0;
+  border-top: 1px solid #d2d0d0;
+  height: 32px;
+}
+.header-nav ul {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.header-nav li {
+  color: $gray70;
+  display: inline-block;
+  font-family: 'Oswald-Light', sans-serif;
+  font-weight: 300;
+  line-height: 32px;
+  margin: 0 -2px;
+}
+.header-nav li:nth-child(2) {
+  margin-left: 0;
+}
+.header-nav li a {
+  color: $gray70;
+  display: block;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 34px;
+  padding: 0 20px;
+  position: relative;
+  text-decoration: none;
+  top: -1px;
+}
+.header-nav li a:hover {
+  background: #333;
+  color: $white;
+}
+.header-nav li a.is-active-category {
+  background: $marine-blue;
+  color: $white;
+}
+.hn-wrapper {
+  position: relative;
+}
+.search-li {
+  float: right;
+}
+
+
+/* Media Queries for header */
+/*______________________________________________________________*/
+@media (max-width: 900px) {
+  .my-cart {
+    font-size: 16px;
+  }
+}
+@media (max-width: 800px) {
+  .currency-country {
+    background: url('../img/uk.png') no-repeat;
+    display: inline-block;
+    font-size: 0;
+    height: 16px;
+    width: 22px;
+  }
+  .currency-country em {
+    display: none;
+  }
+}
+@media (max-width: 750px) {
+  .my-saved,
+  .my-saved + span {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .my-cart {
+    background: url('../img/cart.png') no-repeat 50% 50%;
+    border-right: 1px solid #d2d0d0;
+    display: block;
+    float: left;
+    height: 34px;
+    position: relative;
+    width: 47px;
+  }
+  .cart-tag {
+    display: none;
+  }
+  .cart-total {
+    display: none;
+  }
+  .currency {
+    display: none;
+  }
+  .header-nav {
+    position: relative;
+  }
+  .header-nav li {
+    display: block;
+  }
+  .header-nav li a.is-active-category {
+    background: none;
+    color: $gray70;
+  }
+  .header-nav ul {
+    display: none;
+    position: absolute;
+  }
+  .item-number {
+    background: #e13f56;
+    border-radius: 9px;
+    color: transparent;
+    display: block;
+    font-family: 'Aleo', sans-serif;
+    font-size: 12px;
+    height: 17px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: -9px;
+    width: 17px;
+  }
+  .item-number i {
+    color: $white;
+    position: relative;
+    top: 1px;
+  }
+  .my-account {
+    background: url('../img/account.png') no-repeat 50% 50%;
+    border-left: 1px solid #d2d0d0;
+    border-right: 1px solid #d2d0d0;
+    color: transparent;
+    display: block;
+    float: left;
+    height: 34px;
+    text-overflow: hidden;
+    width: 47px;
+  }
+  .my-account span {
+    display: none;
+  }
+  .my-info {
+    height: 34px;
+    right: 0;
+    top: -1px;
+  }
+  .my-info .info-divider {
+    display: none;
+  }
+  .search-li {
+    float: none;
+  }
+  .super-stuff {
+    display: none;
+  }
+
+}
+@media (max-width: 400px) {
+  .tab {
+    padding: 0 10px;
+  }
+  .tab.rockstar,
+  .tab.twister,
+  .tab.unishop {
+    font-size: 14px;
+  }
+}
+

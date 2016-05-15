@@ -1,0 +1,274 @@
+/* Common Styles */
+/*______________________________________________________________*/
+body {
+  min-width: 320px;
+}
+.container {
+  margin: 0 auto;
+  max-width: 940px;
+  padding: 0 80px;
+}
+/* Product Types */
+/*______________________________________________________________*/
+.prodtypes .container {
+  overflow: hidden;
+}
+.primary-title {
+  color: $gray70;
+  font-family: 'Oswald-Light', sans-serif;
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 48px;
+  margin: 47px 0 19px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.prodtype-stripe {
+  border-bottom: 1px solid $gray70;
+  border-top: 2px solid $gray70;
+  height: 3px;
+  margin-bottom: 34px;
+}
+.prodtype-wrapper {
+  box-sizing: border-box;
+  float: left;
+  overflow: hidden;
+  padding: 0 10px;
+  text-align: center;
+  width: 25%;
+}
+.prodtype-image {
+  display: inline-block;
+  height: 170px;
+  max-width: 220px;
+  position: relative;
+  width: 100%;
+}
+.prodtype-image.jackets {
+  background: url('../img/jackets.png') no-repeat 50% 50%;
+  background-size: cover;
+}
+.prodtype-image.suites {
+  background: url('../img/suites.png') no-repeat 50% 50%;
+  background-size: cover;
+}
+.prodtype-image.jerseys {
+  background: url('../img/jerseys.png') no-repeat 50% 50%;
+  background-size: cover;
+}
+.prodtype-image.shoes {
+  background: url('../img/shoes.png') no-repeat 50% 50%;
+  background-size: cover;
+}
+.prodtype-image h2 {
+  bottom: 15px;
+  color: $white;
+  display: inline;
+  font-family: 'Aleo', sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  left: 20px;
+  line-height: 36px;
+  margin: 0;
+  position: absolute;
+  text-shadow: 0 0 7px #000;
+}
+/* Description */
+/*______________________________________________________________*/
+.description {
+  padding-bottom: 75px;
+}
+.description h2 {
+  color: $gray70;
+  font-family: 'Oswald-Light', sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 30px;
+  margin: 47px 0 19px;
+  text-align: center;
+}
+.description p {
+  color: $gray45;
+  font-family: 'Aleo', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 auto;
+  text-align: center;
+  width: 87%;
+}
+
+/*Round Links*/
+/*______________________________________________________________*/
+.three-links {
+  overflow: hidden;
+}
+.single-link-block {
+  float: left;
+  padding: 60px 0;
+  text-align: center;
+  width: 33.33%;
+}
+.single-link-block h1 {
+  color: $gray70;
+  font-family: 'Oswald-Light', sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  margin: 28px 0 0;
+  text-transform: uppercase;
+}
+.block-caption {
+  display: table;
+  min-height: 80px;
+  text-align: center;
+  width: 100%;
+}
+.block-caption p {
+  color: $gray45;
+  display: table-cell;
+  font-family: 'Aleo', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  vertical-align: middle;
+}
+.single-link-block a {
+  color: $gray70;
+  font-family: 'Oswald-Regular', sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+}
+.single-link-block a:before {
+  content: '<<';
+}
+.single-link-block a:after {
+  content: '>>';
+}
+.single-link-block a:hover {
+  text-decoration: underline;
+}
+
+/* Twitter Post */
+/*______________________________________________________________*/
+.twitter-post {
+  background: $gray05;
+  padding: 50px 0;
+  text-align: center;
+}
+.post-author {
+  color: $gray45;
+  font-family: 'Oswald-Regular', sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0 0 25px;
+}
+.author-name {
+  color: #434343;
+}
+.post-text {
+  color: $gray45;
+  font-family: 'Oswald-Light', sans-serif;
+  font-size: 24px;
+  margin: 0;
+}
+.post-text a {
+  color: #3f8bd5;
+  text-decoration: none;
+}
+.post-text a:hover {
+  text-decoration: underline;
+}
+/* Worldwide Store Locator */
+/*______________________________________________________________*/
+.store-locator {
+  box-sizing: border-box;
+  min-height: 590px;
+  padding-top: 170px;
+  position: relative;
+  text-align: center;
+}
+.store-locator {
+  @include title-stripe($store-locator-color);
+  background-blend-mode: multiply;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.locator-title {
+  color: $white;
+  display: table;
+  font-family: 'Oswald-Light', sans-serif;
+  font-size: 48px;
+  font-weight: normal;
+  height: 170px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.locator-title span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.locator-radius {
+  color: #b8b8b8;
+  font-family: 'Oswald-Regular', sans-serif;
+  font-size: 36px;
+  margin: 43px 0;
+  text-transform: uppercase;
+}
+
+
+/* Media Queries for body components */
+/*______________________________________________________________*/
+@media (max-width: 800px) {
+  .container {
+    padding: 0 40px;
+  }
+  .prodtype-image {
+    height: 110px;
+  }
+  .prodtype-image h2 {
+    bottom: 10px;
+    font-size: 28px;
+    left: 12px;
+  }
+}
+@media (max-width: 700px) {
+  .single-link-block {
+    float: none;
+    margin: 0 auto;
+    padding: 50px 0 0;
+    width: 80%;
+  }
+  .single-link-block:after {
+    background: $gray10;
+    content: '';
+    display: block;
+    height: 1px;
+    margin: 50px auto 0;
+    width: 100px;
+  }
+  .single-link-block:last-child:after {
+    background: none;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 0 30px;
+  }
+  .prodtype-image {
+    height: 170px;
+  }
+  .prodtype-wrapper {
+    padding: 10px;
+    width: 50%;
+  }
+  .locator-title {
+    font-size: 40px;
+  }
+} 
+@media (max-width: 480px) {
+  .prodtype-wrapper {
+    float: none;
+    width: 100%;
+  }
+} 

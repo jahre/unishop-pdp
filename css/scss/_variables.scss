@@ -1,0 +1,17 @@
+/* Main colors */
+/*______________________________________________________________*/
+$white: #fff;
+$gray05: #f6f6f6;
+$gray10: #e9e9e9;
+$gray20: #d7d7d7;
+$gray45: #999;
+$gray70: #555;
+$marine-blue: #167c9a;
+$store-locator-color:#12cce2;
+
+@mixin title-stripe($color) {
+  background: url(../img/locator-bg.png), -webkit-linear-gradient(0deg, $color 170px, transparent 170px);
+  background: url(../img/locator-bg.png), linear-gradient(180deg, $color 170px, transparent 170px);
+}
+
+

@@ -1,0 +1,228 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$account-name: 'account';
+$account-x: 278px;
+$account-y: 109px;
+$account-offset-x: -278px;
+$account-offset-y: -109px;
+$account-width: 24px;
+$account-height: 24px;
+$account-total-width: 388px;
+$account-total-height: 208px;
+$account-image: 'icon-sprite.png';
+$account: (278px, 109px, -278px, -109px, 24px, 24px, 388px, 208px, 'icon-sprite.png', 'account', );
+$cart-name: 'cart';
+$cart-x: 278px;
+$cart-y: 86px;
+$cart-offset-x: -278px;
+$cart-offset-y: -86px;
+$cart-width: 27px;
+$cart-height: 23px;
+$cart-total-width: 388px;
+$cart-total-height: 208px;
+$cart-image: 'icon-sprite.png';
+$cart: (278px, 86px, -278px, -86px, 27px, 23px, 388px, 208px, 'img/icon-sprite.png', 'cart', );
+$daily-edit-name: 'daily-edit';
+$daily-edit-x: 104px;
+$daily-edit-y: 0px;
+$daily-edit-offset-x: -104px;
+$daily-edit-offset-y: 0px;
+$daily-edit-width: 104px;
+$daily-edit-height: 104px;
+$daily-edit-total-width: 388px;
+$daily-edit-total-height: 208px;
+$daily-edit-image: 'icon-sprite.png';
+$daily-edit: (104px, 0px, -104px, 0px, 104px, 104px, 388px, 208px, 'img/icon-sprite.png', 'daily-edit', );
+$move-left-name: 'move-left';
+$move-left-x: 208px;
+$move-left-y: 86px;
+$move-left-offset-x: -208px;
+$move-left-offset-y: -86px;
+$move-left-width: 35px;
+$move-left-height: 69px;
+$move-left-total-width: 388px;
+$move-left-total-height: 208px;
+$move-left-image: 'icon-sprite.png';
+$move-left: (208px, 86px, -208px, -86px, 35px, 69px, 388px, 208px, 'img/icon-sprite.png', 'move-left', );
+$move-right-name: 'move-right';
+$move-right-x: 243px;
+$move-right-y: 86px;
+$move-right-offset-x: -243px;
+$move-right-offset-y: -86px;
+$move-right-width: 35px;
+$move-right-height: 69px;
+$move-right-total-width: 388px;
+$move-right-total-height: 208px;
+$move-right-image: 'icon-sprite.png';
+$move-right: (243px, 86px, -243px, -86px, 35px, 69px, 388px, 208px, 'img/icon-sprite.png', 'move-right', );
+$outfit-and-looks-name: 'outfit-and-looks';
+$outfit-and-looks-x: 0px;
+$outfit-and-looks-y: 104px;
+$outfit-and-looks-offset-x: 0px;
+$outfit-and-looks-offset-y: -104px;
+$outfit-and-looks-width: 104px;
+$outfit-and-looks-height: 104px;
+$outfit-and-looks-total-width: 388px;
+$outfit-and-looks-total-height: 208px;
+$outfit-and-looks-image: 'icon-sprite.png';
+$outfit-and-looks: (0px, 104px, 0px, -104px, 104px, 104px, 388px, 208px, 'img/icon-sprite.png', 'outfit-and-looks', );
+$prodslide-title-bg-name: 'prodslide-title-bg';
+$prodslide-title-bg-x: 351px;
+$prodslide-title-bg-y: 86px;
+$prodslide-title-bg-offset-x: -351px;
+$prodslide-title-bg-offset-y: -86px;
+$prodslide-title-bg-width: 1px;
+$prodslide-title-bg-height: 4px;
+$prodslide-title-bg-total-width: 388px;
+$prodslide-title-bg-total-height: 208px;
+$prodslide-title-bg-image: 'icon-sprite.png';
+$prodslide-title-bg: (351px, 86px, -351px, -86px, 1px, 4px, 388px, 208px, 'img/icon-sprite.png', 'prodslide-title-bg', );
+$search-name: 'search';
+$search-x: 340px;
+$search-y: 86px;
+$search-offset-x: -340px;
+$search-offset-y: -86px;
+$search-width: 11px;
+$search-height: 11px;
+$search-total-width: 388px;
+$search-total-height: 208px;
+$search-image: 'icon-sprite.png';
+$search: (340px, 86px, -340px, -86px, 11px, 11px, 388px, 208px, '../img/icon-sprite.png', 'search', );
+$super-staff-star-name: 'super-staff-star';
+$super-staff-star-x: 327px;
+$super-staff-star-y: 86px;
+$super-staff-star-offset-x: -327px;
+$super-staff-star-offset-y: -86px;
+$super-staff-star-width: 13px;
+$super-staff-star-height: 12px;
+$super-staff-star-total-width: 388px;
+$super-staff-star-total-height: 208px;
+$super-staff-star-image: 'icon-sprite.png';
+$super-staff-star: (327px, 86px, -327px, -86px, 13px, 12px, 388px, 208px, 'img/icon-sprite.png', 'super-staff-star', );
+$uk-name: 'uk';
+$uk-x: 305px;
+$uk-y: 86px;
+$uk-offset-x: -305px;
+$uk-offset-y: -86px;
+$uk-width: 22px;
+$uk-height: 16px;
+$uk-total-width: 388px;
+$uk-total-height: 208px;
+$uk-image: 'icon-sprite.png';
+$uk: (305px, 86px, -305px, -86px, 22px, 16px, 388px, 208px, 'img/icon-sprite.png', 'uk', );
+$unishop-logo-desktop-name: 'unishop-logo-desktop';
+$unishop-logo-desktop-x: 208px;
+$unishop-logo-desktop-y: 0px;
+$unishop-logo-desktop-offset-x: -208px;
+$unishop-logo-desktop-offset-y: 0px;
+$unishop-logo-desktop-width: 180px;
+$unishop-logo-desktop-height: 56px;
+$unishop-logo-desktop-total-width: 388px;
+$unishop-logo-desktop-total-height: 208px;
+$unishop-logo-desktop-image: 'icon-sprite.png';
+$unishop-logo-desktop: (208px, 0px, -208px, 0px, 180px, 56px, 388px, 208px, 'img/icon-sprite.png', 'unishop-logo-desktop', );
+$unishop-logo-footer-name: 'unishop-logo-footer';
+$unishop-logo-footer-x: 208px;
+$unishop-logo-footer-y: 56px;
+$unishop-logo-footer-offset-x: -208px;
+$unishop-logo-footer-offset-y: -56px;
+$unishop-logo-footer-width: 180px;
+$unishop-logo-footer-height: 30px;
+$unishop-logo-footer-total-width: 388px;
+$unishop-logo-footer-total-height: 208px;
+$unishop-logo-footer-image: 'icon-sprite.png';
+$unishop-logo-footer: (208px, 56px, -208px, -56px, 180px, 30px, 388px, 208px, 'img/icon-sprite.png', 'unishop-logo-footer', );
+$unishop-magazine-name: 'unishop-magazine';
+$unishop-magazine-x: 0px;
+$unishop-magazine-y: 0px;
+$unishop-magazine-offset-x: 0px;
+$unishop-magazine-offset-y: 0px;
+$unishop-magazine-width: 104px;
+$unishop-magazine-height: 104px;
+$unishop-magazine-total-width: 388px;
+$unishop-magazine-total-height: 208px;
+$unishop-magazine-image: 'icon-sprite.png';
+$unishop-magazine: (0px, 0px, 0px, 0px, 104px, 104px, 388px, 208px, 'img/icon-sprite.png', 'unishop-magazine', );
+$spritesheet-width: 388px;
+$spritesheet-height: 208px;
+$spritesheet-image: 'icon-sprite.png';
+$spritesheet-sprites: ($account, $cart, $daily-edit, $move-left, $move-right, $outfit-and-looks, $prodslide-title-bg, $search, $super-staff-star, $uk, $unishop-logo-desktop, $unishop-logo-footer, $unishop-magazine, );
+$spritesheet: (388px, 208px, 'img/icon-sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
