@@ -1,6 +1,5 @@
 /* Header Slider (Intro) */
 /*______________________________________________________________*/
-
 .intro-wrapper.cat {
   background: $gray05;
 }
@@ -69,7 +68,6 @@
   line-height: 30px;
   margin: 15px 0;
 }
-
 /* Product Slider */
 /*______________________________________________________________*/
 .sliders-wrapper {
@@ -196,7 +194,7 @@
   bottom: 0;
   box-sizing: border-box;
   color: $white;
-  display: none;
+  //display: none;
   font-family: 'Aleo', sans-serif;
   font-size: 14px;
   line-height: 20px;
@@ -205,12 +203,13 @@
   position: absolute;
   text-align: left;
   width: 100%;
+  opacity: 0.0;
 }
 .prodslide-wrapper:hover .prodslide-description p {
-  display: block;
+  opacity: 1.0;
 }
 .prodslide-wrapper:hover .prodslide-label {
-  display: none;
+  opacity: 0.0;
 }
 .prodslide-stripe {
   background: #bbb;
@@ -219,6 +218,8 @@
   max-width: 100px;
 }
 .prodslide-add {
+  display: block;
+  text-decoration: none;
   background: #2fb789;
   color: $white;
   cursor: pointer;
@@ -230,7 +231,6 @@
 .prodslide-add:hover {
   background: #333;
 }
-
 /* Media Queries for body sliders */
 /*______________________________________________________________*/
 @media (max-width: 800px) {

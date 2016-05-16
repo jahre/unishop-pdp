@@ -87,7 +87,7 @@ a.col-element-title:hover {
   width: 34px;
 }
 .footer-socials:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 .footer-socials.instagram {
   background-position: 0 0;
@@ -110,7 +110,6 @@ a.col-element-title:hover {
 .footer-socials.blogspot {
   background-position: -204px 0;
 }
-
 /* Media Queries for footer */
 /*______________________________________________________________*/
 @media (max-width: 600px) {

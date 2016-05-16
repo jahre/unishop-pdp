@@ -10,6 +10,8 @@
   float: left;
 }
 .tab {
+  display: block;
+  text-decoration: none;
   background: $gray10;
   border-bottom: 1px solid $gray20;
   border-right: 1px solid $gray20;
@@ -208,8 +210,6 @@
 .search-li {
   float: right;
 }
-
-
 /* Media Queries for header */
 /*______________________________________________________________*/
 @media (max-width: 900px) {
@@ -315,7 +315,6 @@
   .super-stuff {
     display: none;
   }
-
 }
 @media (max-width: 400px) {
   .tab {
@@ -327,4 +326,3 @@
     font-size: 14px;
   }
 }
-

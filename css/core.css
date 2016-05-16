@@ -101,6 +101,8 @@ The `sprites` mixin generates identical output to the CSS template
   float: left; }
 
 .tab {
+  display: block;
+  text-decoration: none;
   background: #e9e9e9;
   border-bottom: 1px solid #d7d7d7;
   border-right: 1px solid #d7d7d7;
@@ -654,6 +656,9 @@ body {
 
 /* Potentially reusable buttons, links and inputs */
 /*______________________________________________________________*/
+* {
+  transition: all 0.2s 0s ease-in; }
+
 .intro-link {
   background: #fff;
   border: 3px solid #167c9a;
@@ -675,7 +680,6 @@ body {
   box-sizing: border-box;
   height: 34px;
   line-height: 32px;
-  padding: 0;
   padding: 0 12px;
   position: relative;
   top: -1px;
@@ -986,7 +990,6 @@ body {
   bottom: 0;
   box-sizing: border-box;
   color: #fff;
-  display: none;
   font-family: 'Aleo', sans-serif;
   font-size: 14px;
   line-height: 20px;
@@ -994,13 +997,14 @@ body {
   padding: 8px 12px;
   position: absolute;
   text-align: left;
-  width: 100%; }
+  width: 100%;
+  opacity: 0.0; }
 
 .prodslide-wrapper:hover .prodslide-description p {
-  display: block; }
+  opacity: 1.0; }
 
 .prodslide-wrapper:hover .prodslide-label {
-  display: none; }
+  opacity: 0.0; }
 
 .prodslide-stripe {
   background: #bbb;
@@ -1009,6 +1013,8 @@ body {
   max-width: 100px; }
 
 .prodslide-add {
+  display: block;
+  text-decoration: none;
   background: #2fb789;
   color: #fff;
   cursor: pointer;
@@ -1165,7 +1171,7 @@ a.col-element-title:hover {
   width: 34px; }
 
 .footer-socials:hover {
-  opacity: .6; }
+  opacity: 0.6; }
 
 .footer-socials.instagram {
   background-position: 0 0; }

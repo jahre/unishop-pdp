@@ -1,5 +1,8 @@
 /* Potentially reusable buttons, links and inputs */
 /*______________________________________________________________*/
+* {
+  transition: all 0.2s 0s ease-in;
+}
 .intro-link {
   background: $white;
   border: 3px solid $marine-blue;
@@ -21,7 +24,6 @@
   box-sizing: border-box;
   height: 34px;
   line-height: 32px;
-  padding: 0;
   padding: 0 12px;
   position: relative;
   top: -1px;
@@ -57,7 +59,7 @@
 .locator-find:hover {
   background: #006380;
 }
-.locator-select{
+.locator-select {
   background: none;
   border: none;
   color: #474747;
@@ -111,7 +113,6 @@
 .newslatter-subscribe:hover {
   background: #006380;
 }
-
 /* Media Queries for UI components */
 /*______________________________________________________________*/
 @media (max-width: 900px) {
@@ -144,5 +145,4 @@
   .newslatter-subscribe {
     max-width: 100%;
   }
-  
 }

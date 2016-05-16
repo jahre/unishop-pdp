@@ -96,7 +96,6 @@ body {
   text-align: center;
   width: 87%;
 }
-
 /*Round Links*/
 /*______________________________________________________________*/
 .three-links {
@@ -145,7 +144,6 @@ body {
 .single-link-block a:hover {
   text-decoration: underline;
 }
-
 /* Twitter Post */
 /*______________________________________________________________*/
 .twitter-post {
@@ -207,7 +205,6 @@ body {
   display: table-cell;
   vertical-align: middle;
 }
-
 .locator-radius {
   color: #b8b8b8;
   font-family: 'Oswald-Regular', sans-serif;
@@ -215,8 +212,6 @@ body {
   margin: 43px 0;
   text-transform: uppercase;
 }
-
-
 /* Media Queries for body components */
 /*______________________________________________________________*/
 @media (max-width: 800px) {
@@ -265,10 +260,10 @@ body {
   .locator-title {
     font-size: 40px;
   }
-} 
+}
 @media (max-width: 480px) {
   .prodtype-wrapper {
     float: none;
     width: 100%;
   }
-} 
+}
