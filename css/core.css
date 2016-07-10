@@ -656,7 +656,7 @@ body {
 
 /* Potentially reusable buttons, links and inputs */
 /*______________________________________________________________*/
-* {
+a {
   transition: all 0.2s 0s ease-in; }
 
 .intro-link {
@@ -821,12 +821,19 @@ body {
   background: url("../img/move-right.png") no-repeat 50% 50%;
   right: 15px; }
 
-.intro-slide {
+.introslide-container {
   height: 420px;
   overflow: hidden;
+  width: 100%;
+  position: relative; }
+
+.intro-slide {
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
   width: 100%; }
 
-.intro-slide.gentleman {
+.intro-slide.gentlemen {
   background: url("../img/intro-gentlemen.png") no-repeat 0 50%; }
 
 .text-part {
@@ -1031,11 +1038,11 @@ body {
 @media (max-width: 800px) {
   .intro {
     padding: 0; }
-  .intro-slide {
+  .introslide-container {
     box-sizing: border-box;
     height: 400px;
     padding: 0 50px; }
-  .intro-slide.gentleman {
+  .intro-slide {
     background: url("../img/intro-gentlemen.png") no-repeat 0 100%; }
   .prodslide-info h3 {
     width: 70px; }
@@ -1049,7 +1056,7 @@ body {
     line-height: 24px; } }
 
 @media (max-width: 600px) {
-  .intro-slide.gentleman {
+  .intro-slide {
     background: url("../img/intro-gentlemen.png") no-repeat -100px 100%; }
   .text-part-wrap p {
     font-size: 16px;
@@ -1067,9 +1074,9 @@ body {
     padding: 10px; } }
 
 @media (max-width: 400px) {
-  .intro-slide {
+  .introslide-container {
     height: 290px; }
-  .intro-slide.gentleman {
+  .intro-slide {
     background: url("../img/intro-gentlemen.png") no-repeat 50% 100%;
     background-size: 100%; }
   .text-part {

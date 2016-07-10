@@ -11,6 +11,7 @@
         <!-- Place favicon.ico in the root directory -->
         <link rel='stylesheet' href='css/normalize.css'>
         <link rel='stylesheet' href='css/core.css'>
+        <link rel="stylesheet" href="css/slick.css">
         <!--[if lte IE 9]><link href="css/ie.css" rel="stylesheet" type="text/css" /><![endif]-->
         <script src='js/vendor/jquery-1.12.0.min.js'></script>
         <link
@@ -98,16 +99,43 @@
         </header>
         <section class='intro-wrapper cat'>
             <div class='intro'>
-                <div class='intro-slide gentleman'>
-                    <div class='text-part'>
-                        <div class='text-part-wrap'>
-                            <h1>Gentlemen,<br>
-                                this way please</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae
-                                massa velit, eu laoreet massa. Sed ac orci libero, eu dignissim enim.</p>
-                            <a href='#' class='intro-link'>View Collection</a>
+                <div class='introslide-container'>
+                    <div class='intro-slide gentlemen'>
+                        <div class='text-part'>
+                            <div class='text-part-wrap'>
+                                <h1>Gentlemen,<br>
+                                    this way please</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae
+                                    massa velit, eu laoreet massa. Sed ac orci libero, eu dignissim enim.</p>
+                                <a href='#' class='intro-link'>View Collection</a>
+                            </div>
                         </div>
                     </div>
+
+                    <div class='intro-slide gentlemen'>
+                        <div class='text-part'>
+                            <div class='text-part-wrap'>
+                                <h1>Gentlemen,<br>
+                                    this way please</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae
+                                    massa velit, eu laoreet massa. Sed ac orci libero, eu dignissim enim.</p>
+                                <a href='#' class='intro-link'>View Collection</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='intro-slide gentlemen'>
+                        <div class='text-part'>
+                            <div class='text-part-wrap'>
+                                <h1>Gentlemen,<br>
+                                    this way please</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae
+                                    massa velit, eu laoreet massa. Sed ac orci libero, eu dignissim enim.</p>
+                                <a href='#' class='intro-link'>View Collection</a>
+                            </div>
+                        </div>
+                    </div>    
+
                 </div>
                 <div class='intro-move left'></div>
                 <div class='intro-move right'></div>
@@ -161,8 +189,8 @@
                             <a href='#'>View All</a>
                         </h4>
                     </div>
-                    <div class='container'>
-                        <div class='slider-fov'>
+                    <div class='container' id="slider1">
+                        <div class='slider-fov' >
                             <div class='prodslide-wrapper'>
                                 <div class='prodslide'>
                                     <div class='prodslide-image dark-brogues'>
@@ -240,9 +268,87 @@
                                     <a href='#' class='prodslide-add'>Add to cart</a>
                                 </div>
                             </div>
+                            <!-- second portion -->
+                            <div class='prodslide-wrapper'>
+                                <div class='prodslide'>
+                                    <div class='prodslide-image dark-brogues'>
+                                        <img src='img/dark-brogues1.png'>
+                                    </div>
+                                    <div class='prodslide-info'>
+                                        <div class='prodslide-description'>
+                                            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                                cubilia Curae Proin vel ante a orci tempus eleifend ut et magna. Lorem ipsum
+                                                dolor.
+                                            </p>
+                                        </div>
+                                        <h3>Dark Brogues</h3>
+                                        <div class='prodslide-stripe'></div>
+                                        <span class='-price'>$65.07</span>
+                                    </div>
+                                    <a href='#' class='prodslide-add'>Add to cart</a>
+                                </div>
+                            </div>
+                            <div class='prodslide-wrapper'>
+                                <div class='prodslide'>
+                                    <div class='prodslide-image leather-hightops'>
+                                        <img src='img/leather-hightops.png'>
+                                    </div>
+                                    <div class='prodslide-info'>
+                                        <div class='prodslide-description'>
+                                            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                                cubilia Curae Proin vel ante a orci tempus eleifend ut et magna. Lorem ipsum
+                                                dolor.
+                                            </p>
+                                        </div>
+                                        <h3>Leather Hightops</h3>
+                                        <div class='prodslide-stripe'></div>
+                                        <span class='prodslide-price'>$65.07</span>
+                                    </div>
+                                    <a href='#' class='prodslide-add'>Add to cart</a>
+                                </div>
+                            </div>
+                            <div class='prodslide-wrapper'>
+                                <div class='prodslide'>
+                                    <div class='prodslide-image'>
+                                        <img src='img/gray-brogues.png'>
+                                    </div>
+                                    <div class='prodslide-info'>
+                                        <div class='prodslide-label sale-label'>Sale</div>
+                                        <div class='prodslide-description'>
+                                            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                                cubilia Curae Proin vel ante a orci tempus eleifend ut et magna. Lorem ipsum
+                                                dolor.
+                                            </p>
+                                        </div>
+                                        <h3>Gray Brogues</h3>
+                                        <div class='prodslide-stripe'></div>
+                                        <span class='prodslide-price'>$65.07</span>
+                                    </div>
+                                    <a href='#' class='prodslide-add'>Add to cart</a>
+                                </div>
+                            </div>
+                            <div class='prodslide-wrapper'>
+                                <div class='prodslide'>
+                                    <div class='prodslide-image'>
+                                        <img src='img/dark-brogues2.png'>
+                                    </div>
+                                    <div class='prodslide-info'>
+                                        <div class='prodslide-description'>
+                                            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                                cubilia Curae Proin vel ante a orci tempus eleifend ut et magna. Lorem ipsum
+                                                dolor.
+                                            </p>
+                                        </div>
+                                        <h3>Dark Brogues</h3>
+                                        <div class='prodslide-stripe'></div>
+                                        <span class='prodslide-price'>$65.07</span>
+                                    </div>
+                                    <a href='#' class='prodslide-add'>Add to cart</a>
+                                </div>
+                            </div>
+
                         </div>
-                        <div class='intro-move left'></div>
-                        <div class='intro-move right'></div>
+                        
                     </div>
                 </div>
             </section>
@@ -256,8 +362,8 @@
                             <a href='#'>View All</a>
                         </h4>
                     </div>
-                    <div class='container'>
-                        <div class='slider-fov'>
+                    <div class='container' id="slider2">
+                        <div class='slider-fov' >
                             <div class='prodslide-wrapper'>
                                 <div class='prodslide'>
                                     <div class='prodslide-image dark-brogues'>
@@ -316,6 +422,7 @@
                                     <a href='#' class='prodslide-add'>Add to cart</a>
                                 </div>
                             </div>
+
                             <div class='prodslide-wrapper'>
                                 <div class='prodslide'>
                                     <div class='prodslide-image'>
@@ -335,9 +442,67 @@
                                     <a href='#' class='prodslide-add'>Add to cart</a>
                                 </div>
                             </div>
+                            <!-- second potion -->
+                            <div class='prodslide-wrapper'>
+                                <div class='prodslide'>
+                                    <div class='prodslide-image dark-brogues'>
+                                        <img src='img/dark-brogues1.png'>
+                                    </div>
+                                    <div class='prodslide-info'>
+                                        <div class='prodslide-description'>
+                                            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                                cubilia Curae Proin vel ante a orci tempus eleifend ut et magna. Lorem ipsum
+                                                dolor.
+                                            </p>
+                                        </div>
+                                        <h3>Dark Brogues</h3>
+                                        <div class='prodslide-stripe'></div>
+                                        <span class='-price'>$65.07</span>
+                                    </div>
+                                    <a href='#' class='prodslide-add'>Add to cart</a>
+                                </div>
+                            </div>
+                            <div class='prodslide-wrapper'>
+                                <div class='prodslide'>
+                                    <div class='prodslide-image leather-hightops'>
+                                        <img src='img/leather-hightops.png'>
+                                    </div>
+                                    <div class='prodslide-info'>
+                                        <div class='prodslide-description'>
+                                            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                                cubilia Curae Proin vel ante a orci tempus eleifend ut et magna. Lorem ipsum
+                                                dolor.
+                                            </p>
+                                        </div>
+                                        <h3>Leather Hightops</h3>
+                                        <div class='prodslide-stripe'></div>
+                                        <span class='prodslide-price'>$65.07</span>
+                                    </div>
+                                    <a href='#' class='prodslide-add'>Add to cart</a>
+                                </div>
+                            </div>
+                            <div class='prodslide-wrapper'>
+                                <div class='prodslide'>
+                                    <div class='prodslide-image'>
+                                        <img src='img/gray-brogues.png'>
+                                    </div>
+                                    <div class='prodslide-info'>
+                                        <div class='prodslide-label new-label'>New</div>
+                                        <div class='prodslide-description'>
+                                            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                                cubilia Curae Proin vel ante a orci tempus eleifend ut et magna. Lorem ipsum
+                                                dolor.
+                                            </p>
+                                        </div>
+                                        <h3>Gray Brogues</h3>
+                                        <div class='prodslide-stripe'></div>
+                                        <span class='prodslide-price'>$65.07</span>
+                                    </div>
+                                    <a href='#' class='prodslide-add'>Add to cart</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class='intro-move left'></div>
-                        <div class='intro-move right'></div>
+
                     </div>
                 </div>
             </section>
@@ -491,6 +656,7 @@
         </footer>
 
         <!-- SCRIPTS -->
+        <script src="js/slick.js"></script>
         <script src='js/main.js'></script>
     </body>
 </html>
